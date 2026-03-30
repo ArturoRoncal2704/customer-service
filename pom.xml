@@ -15,6 +15,7 @@
     <description>Microservicio para la gestión de clientes</description>
     <properties>
         <java.version>11</java.version>
+        <lombok.version>1.18.32</lombok.version>
     </properties>
     <dependencies>
         <!-- Mongodb Reactive -->
@@ -31,6 +32,8 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
             <optional>true</optional>
         </dependency>
         <!-- springdoc -->
@@ -62,6 +65,7 @@
                         <path>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
+                            <version>${lombok.version}</version>
                         </path>
                     </annotationProcessorPaths>
                 </configuration>
